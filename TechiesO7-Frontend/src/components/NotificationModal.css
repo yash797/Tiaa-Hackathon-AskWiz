@@ -1,0 +1,56 @@
+.notification-modal {
+    background-color: #f0f8ff; /* Light blue color */
+    width: 360px;
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    /* padding: 10px; */
+    border-radius: 4px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+
+
+  }
+  
+  .notification-item:hover {
+    background-color: #00020418;
+    padding: auto;
+  }
+  
+  .notification-content {
+    margin-left: 10px;
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .notification-time {
+    font-size: 12px;
+    color: #888;
+    align-self: flex-end;
+  }
+  
+  .notification-message {
+    color: #333;
+  }
+  
+  /* Additional styles as needed */
+  .customModal {
+    background: #f0f8ff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    /* box-shadow: none; */
+  }

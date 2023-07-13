@@ -1,0 +1,7 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  overflow-y: scroll;
+  /* flex: 0.6; */
+}

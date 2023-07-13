@@ -1,0 +1,125 @@
+.options-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .option-container {
+    position: relative;
+    /* padding: -0.5rem 1rem; */
+    margin-left: 2px;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .option-container:hover {
+    background-color: #9c9c9c26;
+  }
+  .active-option-container {
+    background-color: #9c9c9c26;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+
+    margin-left: 2px;
+
+
+
+  }
+  
+  .option-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+
+  }
+  
+  .option-title {
+    color: #4b5563;
+    font-size: 1.5rem;
+    /* margin-right: 0.75rem; */
+margin-bottom: 0.5rem;
+margin-top: 0.5rem;
+
+  }
+  .option-container:hover .option-title{
+    color: #000000;
+  }
+  .option-details {
+    margin-top: 1rem;
+  }
+  
+  .option-description {
+    color: #4b5563;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .option-container {
+      padding: 0.5rem;
+    }
+  
+    .icon {
+      margin-right: 0.5rem;
+    }
+  
+    .option-title {
+      font-size: 1.25rem;
+    }
+  
+    .option-details {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+  
+    .option-container.active .option-details {
+      display: block;
+    }
+  }
+  
+
+  @media only screen and (max-width: 592px) {
+    .option-container {
+      padding: 0.2rem;
+    }
+  
+    .icon {
+      margin-right: 0.2rem;
+    }
+  
+    .option-title {
+      font-size: 0.75rem;
+    }
+  
+    .option-details {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+  
+    .option-container.active .option-details {
+      display: block;
+    }
+  }
